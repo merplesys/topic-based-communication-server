@@ -30,6 +30,7 @@ public class Client2 {
             frame.setSize(600, 500);
 
             JTextArea tutorial = new JTextArea();
+            tutorial.setFont(new Font("Arial", Font.PLAIN, 20));
             tutorial.setEditable(false);
             tutorial.append("Subscribe to topics using the following message format: [subscribe:(topic)] \n");
             tutorial.append("Unsubscribe to topics using the following message format: [unsubscribe:(topic)] \n");
@@ -39,11 +40,13 @@ public class Client2 {
             JScrollPane tutorialPane = new JScrollPane(tutorial);
 
             messageTextArea = new JTextArea();
+            messageTextArea.setFont(new Font("Arial", Font.PLAIN, 20));
             messageTextArea.setEditable(false);
             JScrollPane scrollPane = new JScrollPane(messageTextArea);
 
             inputField = new JTextField();
             inputField.addActionListener(new SendMessageListener());
+            inputField.setFont(new Font("Arial", Font.PLAIN, 20));
 
             frame.setLayout(new BorderLayout());
             frame.add(tutorialPane, BorderLayout.NORTH);
