@@ -1,4 +1,4 @@
-# topic-based-communication-server
+# Senior Project
 Everything needed to run the application is in the [Project Server/src](https://github.com/merplesys/topic-based-communication-server/tree/main/Project%20Server/src) folder. The included files are the actual server and multiple copies of the client that I used for testing. Technically only Server and Client are necessary to run the program but I included the others as well. Clients 2 and 3 are exact copies of the first client just with a number at the end to differentiate them. SClient is a copy of the main client but it sends its messages several times instead of once to simulate more activity.
 ## Running Instructions:
 1) Run Server.Java
