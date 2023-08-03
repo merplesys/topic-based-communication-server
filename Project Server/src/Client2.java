@@ -106,7 +106,11 @@ public class Client2 {
                     } else{
                         content = message;
                     }
-                    messageTextArea.append("Received: " + content + "  - " + diff + " ms \n");
+                    if (message.contains("You are now subscribed to the topic")){
+                        messageTextArea.append("Received: " + content + " \n");
+                    } else{
+                        messageTextArea.append("Received: " + content + "  - " + diff + " ms \n");
+                    }
                 }
             } catch (IOException e){
                 e.printStackTrace();
