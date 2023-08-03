@@ -27,7 +27,7 @@ public class Client {
 
             JFrame frame = new JFrame("Client"); //Creation of GUI elements
             frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-            frame.setSize(600, 500);
+            frame.setSize(800, 600);
 
             JTextArea tutorial = new JTextArea();
             tutorial.setFont(new Font("Arial", Font.PLAIN, 20));
